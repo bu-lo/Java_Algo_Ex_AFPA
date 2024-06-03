@@ -24,7 +24,6 @@ public static void userInput() {
 
 public static void sumInteger(int n) {
    
-    int[] arrayInteger = new int [n];
     int sum = 0;
 
     for (int i = 0; i<=n; i++) {
@@ -35,3 +34,7 @@ public static void sumInteger(int n) {
 }
 
 }
+
+// Other idea with: int[] arrayInteger = new int [n];
+// Ini array values
+// sum = sum + arrayInteger[i];
