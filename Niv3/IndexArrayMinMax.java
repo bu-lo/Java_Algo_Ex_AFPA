@@ -3,7 +3,7 @@
  * Find index of the min, idem for the max, creation of a new array with the two index.
  */
 
- import java.util.Scanner; // import the Scanner class
+import java.util.Scanner; // import the Scanner class
 
 
 public class IndexArrayMinMax {
@@ -42,8 +42,41 @@ public class IndexArrayMinMax {
     }
 
 
-    public static int[] findMinMaxIndex(int[] array){
-        new arrayResult = new int[2];
-    }
+    public static void findMinMaxIndex(int[] array){
+        
+        //Initialization, hypothesis valor min or max is the firts case in the array
+        int min = array[0];
+        int max = array[0];
 
+        int indexMin = 0;
+        int indexMax = 0;
+
+        for (int i = 0 ; i< array.length ; i++){
+            if (array[i] < min) {
+                min = array[i];
+                indexMin = i;
+            }
+            if (array[i] > max) {
+                max = array[i];
+                indexMax = i;
+            }
+        }
+
+        System.out.println("-----------------------");
+        System.out.println("Min: " +min);
+        System.out.println("Index min: " +indexMin);
+        System.out.println("-----------------------");
+        System.out.println("Max: " +max);
+        System.out.println("Index max: " +indexMax);
+
+        int[] arrayResult = new int[2];
+        arrayResult[0] = indexMin;
+        arrayResult[1] = indexMax;
+
+        System.out.println("-----------------------");
+        System.out.println("Index min in arrayResult[0]: " +arrayResult[0]);
+        System.out.println("Index max in arrayResult[1]: " +arrayResult[1]);
+
+    }
 }
+  
