@@ -1,5 +1,5 @@
 /*
- * Exercise 5.1 level 3 - "Manipulation of 1D/one-dimensional arrays."
+ * Exercise 5.1 level 1 - "Manipulation of 1D/one-dimensional arrays."
  * Factorial N
  */
 
@@ -11,6 +11,7 @@
     }
     
         public static void iterationArray(double[] array) {
+            System.out.println("Values you can find in the array:");
             for (int i = 0; i<4; i++) {
                 System.out.println(array[i]);
             }

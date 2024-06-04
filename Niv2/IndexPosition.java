@@ -1,5 +1,5 @@
 /*
- * Exercise 4.1  niv 1 - "Iterative Control Structures"
+ * Exercise 4.1 level 1 - "Iterative Control Structures"
  * Sequential search
  */
 
@@ -96,8 +96,7 @@ public class IndexPosition {
 	 * 
 	 * i++;
 	 * }
-	 * }
-	 * }
+	 * 
 	 */
 
 

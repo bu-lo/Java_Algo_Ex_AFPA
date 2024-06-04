@@ -1,5 +1,5 @@
 /*
- * Exercise 4.3 level 2 - "Alternative control structures"
+ * Exercise 4.3 level 1 - "Alternative control structures"
  * Integer sum of n elements
  */
 
