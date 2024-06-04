@@ -7,29 +7,34 @@ import java.util.Scanner; // import the Scanner class
 
 public class IndexSum {
 
-public static void main (String[] args){
-    userInput();
-}
+    public static void main(String[] args) {
+        userInput();
+    }
 
-public static void userInput(int i, int j){
+    public static void userInput() {
+        Scanner myObj = new Scanner(System.in);
 
-    Scanner myObj = new Scanner(System.in);
+        System.out.println("Please, enter the index i: ");
+        int indexi = myObj.nextInt();
+        System.out.println("Please, enter the index j: ");
+        int indexj = myObj.nextInt();
 
-    System.out.println("Please, enter the value i: ");
-        int i = myObj.nextInt();
-    System.out.println("Please, enter the value j: ");
-        int j = myObj.nextInt();
-        
-    indexSum(i,j);
+        indexSum(indexi, indexj);
 
-    myObj.close();
-}
+        myObj.close();
+    }
 
-public static void indexSum (int i, int j){
-    int[] array = {4,6,2,2};
-    int isum = array[i] + array[y];
-    
+    public static void indexSum(int indexi, int indexj) {
+        int[] array = {4, 6, 2, 2};
+        int isum = 0;
 
-}
+        for (int i=indexi ; i<indexj ; i++) {
+            isum += array[i];
+        }
+
+        System.out.println("---------------------------");
+        System.out.println("The sum of the elements between index i & j: " +isum+ " .");
+
+    }
 
 }
