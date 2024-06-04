@@ -38,11 +38,15 @@ public class IndexArrayMinMax {
 
 		int[] array = { n1, n2, n3, n4, n5, n6 };
 
-        findMinMaxIndex(array);
+        int[] minMaxIndexes = findMinMaxIndex(array);
+
+        System.out.println("-----------------------");
+        System.out.println("Index min in arrayResult[0]: " + minMaxIndexes[0]);
+        System.out.println("Index max in arrayResult[1]: " + minMaxIndexes[1]);
+
     }
 
-
-    public static void findMinMaxIndex(int[] array){
+    public static int[] findMinMaxIndex(int[] array){
         
         //Initialization, hypothesis valor min or max is the firts case in the array
         int min = array[0];
@@ -73,10 +77,9 @@ public class IndexArrayMinMax {
         arrayResult[0] = indexMin;
         arrayResult[1] = indexMax;
 
-        System.out.println("-----------------------");
-        System.out.println("Index min in arrayResult[0]: " +arrayResult[0]);
-        System.out.println("Index max in arrayResult[1]: " +arrayResult[1]);
+        return arrayResult;
 
+    
     }
 }
   
