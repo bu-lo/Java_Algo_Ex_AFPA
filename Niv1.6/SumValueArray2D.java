@@ -7,17 +7,17 @@ public class SumValueArray2D {
 
     public static void main(String[] args) {
         int[][] array2D = {
-            {4, 6, 5},
-            {7, 11, 34},
-            {28, 6, 2},
-            {1, 2, 3},
-            {4, 3, 10}
+                { 4, 6, 5 },
+                { 7, 11, 34 },
+                { 28, 6, 2 },
+                { 1, 2, 3 },
+                { 4, 3, 10 }
         };
         int height = 5;
         int width = 3;
 
         sumValueArray2D(array2D, width, height);
-    
+
     }
 
     public static void sumValueArray2D(int[][] array2D, int width, int height) {

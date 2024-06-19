@@ -7,25 +7,25 @@ import java.util.Scanner; // import the Scanner class
 
 public class MirrorString {
 
-    public static void main (String[] args){
+    public static void main(String[] args) {
 
-    System.out.println("Please enter your string of characters:");
+        System.out.println("Please enter your string of characters:");
 
-    Scanner scanner = new Scanner(System.in);
-    String originalStr = scanner.nextLine();
+        Scanner scanner = new Scanner(System.in);
+        String originalStr = scanner.nextLine();
 
-    scanner.close();
+        scanner.close();
 
-    String reversedStr = mirrorString(originalStr);
+        String reversedStr = mirrorString(originalStr);
 
-    System.out.println(reversedStr);
+        System.out.println(reversedStr);
 
     }
 
-    public static String mirrorString (String originalStr){
+    public static String mirrorString(String originalStr) {
 
-        StringBuilder r = new StringBuilder (originalStr); //creation of a StringBuilder
-        r.reverse(); //reverse content
-        return r.toString(); //convert to string
+        StringBuilder r = new StringBuilder(originalStr); // creation of a StringBuilder
+        r.reverse(); // reverse content
+        return r.toString(); // convert to string
     }
 }

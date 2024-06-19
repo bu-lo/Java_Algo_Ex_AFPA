@@ -15,7 +15,7 @@ public class StarsPyramid {
         Scanner myObj = new Scanner(System.in);
 
         System.out.println("How many stars high would you like ?");
-		int stars = myObj.nextInt();
+        int stars = myObj.nextInt();
 
         myObj.close();
 
@@ -25,20 +25,20 @@ public class StarsPyramid {
     public static void starsPyramid(int stars) {
         int i = 1;
 
-        while (i<=stars){
+        while (i <= stars) {
             String ligne = "";
 
             int j = 1;
-            while (j<=i){
+            while (j <= i) {
                 ligne += "*";
                 j++;
             }
-        
-            System.out.println(ligne); 
-    
+
+            System.out.println(ligne);
+
             i++;
         }
-        
+
     }
 
 }

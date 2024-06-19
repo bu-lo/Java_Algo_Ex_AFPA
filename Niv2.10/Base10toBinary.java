@@ -25,20 +25,20 @@ public class Base10toBinary {
         return n;
     }
 
-    public static String base10ToBinary(int n){
+    public static String base10ToBinary(int n) {
         StringBuilder binary = new StringBuilder();
-        
+
         // Particular case 0
-        if ( n == 0 ){
-            binary.insert(0,0);
+        if (n == 0) {
+            binary.insert(0, 0);
         }
 
         // Others
-        while (n>0){
+        while (n > 0) {
             int rest = n % 2;
-            binary.insert(0, rest); //we add the rest at the beginning of the string
-            n = n/2; // entire division
-        }   
+            binary.insert(0, rest); // we add the rest at the beginning of the string
+            n = n / 2; // entire division
+        }
         return binary.toString();
     }
 

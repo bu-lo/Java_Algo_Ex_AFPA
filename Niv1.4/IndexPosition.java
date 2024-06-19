@@ -50,14 +50,14 @@ public class IndexPosition {
 
 	// tab of n elements, finding value
 
-
 	// FOR loop
-	/* for( ; ; i++) {
-	*	}
-	*
-	*
-	*
-	 /* public static void indexPosition(int[] array, int value) {
+	/*
+	 * for( ; ; i++) {
+	 * }
+	 *
+	 *
+	 *
+	 * /* public static void indexPosition(int[] array, int value) {
 	 * int n = 6; // size of the array -> array.lenght
 	 * 
 	 * for (int i = 0; i < n; i++) { // for loop
@@ -71,10 +71,10 @@ public class IndexPosition {
 	 * }
 	 * }
 	 * }
-	 
-
-	// while loop
-	 /*
+	 * 
+	 * 
+	 * // while loop
+	 * /*
 	 * int i = 0;
 	 * while (i < n) {
 	 * ???
@@ -99,15 +99,14 @@ public class IndexPosition {
 	 * 
 	 */
 
-
-// do while loop
-/*
- * int i = 0
- * do {
- * ???
- * i++;
- * } while (i<n);
- */
+	// do while loop
+	/*
+	 * int i = 0
+	 * do {
+	 * ???
+	 * i++;
+	 * } while (i<n);
+	 */
 
 	public static void indexPosition(int[] array, int value) {
 		// int n = 6; // size of the array -> array.lenght
@@ -124,6 +123,5 @@ public class IndexPosition {
 			i++;
 
 		} while (i < array.length);
-
 	}
 }

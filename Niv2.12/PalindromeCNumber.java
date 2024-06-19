@@ -6,7 +6,7 @@
 import java.util.Scanner; //import the Scanner class
 
 public class PalindromeCNumber {
-    
+
     public static void main(String[] args) {
         int n = inputUser();
         int rn = reverse(n);
@@ -27,33 +27,30 @@ public class PalindromeCNumber {
     }
 
     // reversing the string
-    public static int reverse(int n){
-        
+    public static int reverse(int n) {
+
         int rn = 0;
 
-        //copy of n
+        // copy of n
         int originalN = n;
 
-        //reversing n
-        while (n != 0){
+        // reversing n
+        while (n != 0) {
             originalN = n % 10;
-            rn = rn*10 + originalN;
-            n = n/10;
+            rn = rn * 10 + originalN;
+            n = n / 10;
         }
 
         return rn;
     }
 
     // test s = rs ?
-    public static void test(int n, int rn){
-        if(n == rn){
+    public static void test(int n, int rn) {
+        if (n == rn) {
             System.out.println("It's a palindrome !");
         } else {
             System.out.println("It isn't palindrome..");
         }
     }
-
-
-
 
 }

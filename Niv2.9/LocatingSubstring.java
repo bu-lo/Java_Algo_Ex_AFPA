@@ -7,9 +7,9 @@ import java.util.Scanner; // import the Scanner class
 
 public class LocatingSubstring {
 
-    public static void main(String [] args) {
+    public static void main(String[] args) {
 
-        //Déclaration String + Substring
+        // Déclaration String + Substring
         System.out.println("Please enter the string:");
 
         Scanner scanner = new Scanner(System.in);
@@ -20,32 +20,31 @@ public class LocatingSubstring {
 
         scanner.close();
 
-        //Init indexes
+        // Init indexes
 
-        int startIndex= -1;
+        int startIndex = -1;
         int endIndex = -1;
 
+        // Traversing the string to find the substring
 
-        //Traversing the string to find the substring
-
-        for (int i=0; i<= str.length() - str2.length(); i++){
+        for (int i = 0; i <= str.length() - str2.length(); i++) {
             boolean found = true;
 
-            for (int j = 0; j<str2.length(); j++){
-                if (str.charAt(i+j) != str2.charAt(j)){
+            for (int j = 0; j < str2.length(); j++) {
+                if (str.charAt(i + j) != str2.charAt(j)) {
                     found = false;
                     break;
                 }
             }
 
-            if(found){
+            if (found) {
                 startIndex = i;
-                endIndex = i + str2.length() -1;
-                break; 
+                endIndex = i + str2.length() - 1;
+                break;
             }
         }
 
-        //Print results
+        // Print results
         System.out.println("First index : " + startIndex);
         System.out.println("Index last character : " + endIndex);
         System.out.println("---------------------");

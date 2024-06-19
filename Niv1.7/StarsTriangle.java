@@ -15,7 +15,7 @@ public class StarsTriangle {
         Scanner myObj = new Scanner(System.in);
 
         System.out.println("How many stars high would you like ?");
-		int stars = myObj.nextInt();
+        int stars = myObj.nextInt();
 
         myObj.close();
 
@@ -26,30 +26,28 @@ public class StarsTriangle {
         int i = 1;
         boolean up = true; // true -> up, then faulse -> down
 
-        while (i>0){
+        while (i > 0) {
             String ligne = "";
 
             int j = 1;
-            while (j<=i){
+            while (j <= i) {
                 ligne += "*";
                 j++;
             }
-        
-            System.out.println(ligne); 
-    
-            if (i == stars){
+
+            System.out.println(ligne);
+
+            if (i == stars) {
                 up = false;
-                }
+            }
 
-            if (up == true){
-                i++; 
-                }
+            if (up == true) {
+                i++;
+            }
 
-            if (up == false){
-                    i--;
-                }
-        } 
+            if (up == false) {
+                i--;
+            }
+        }
     }
 }
-
-

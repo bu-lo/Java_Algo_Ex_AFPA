@@ -16,20 +16,20 @@ public class PercentageParticipation {
         do {
             userInput();
 
-            //Scanner myObj = new Scanner(System.in); ---- DO NOT DO
+            // Scanner myObj = new Scanner(System.in); ---- DO NOT DO
             System.out.println("Do you want to reboot? Y/N");
             r = myObj.next().charAt(0);
-        
-         } while (r == 'Y');
 
-         System.out.println("Thanks and have a good day !");
+        } while (r == 'Y');
 
-         myObj.close();  // CLOSING AT THE END OUT OF THE LOOP
+        System.out.println("Thanks and have a good day !");
+
+        myObj.close(); // CLOSING AT THE END OUT OF THE LOOP
     }
 
     // Calculating the percentage of participation
     public static void percentageParticipation(char c, int e, int s) {
-        int pRate = 0; //p 
+        int pRate = 0; // p
         if (c == 'Y') {
             pRate = pRate + 20;
         } else {
@@ -54,8 +54,8 @@ public class PercentageParticipation {
 
     // User input
     public static void userInput() {
-        
-        //Scanner myObj = new Scanner(System.in); ---- DO NOT DO
+
+        // Scanner myObj = new Scanner(System.in); ---- DO NOT DO
 
         System.out.println("Welcome in the calculation software of your participation rate!");
 
@@ -68,8 +68,6 @@ public class PercentageParticipation {
 
         percentageParticipation(c, e, s);
 
-        //myObj.close(); ---- DO NOT DO 
-
+        // myObj.close(); ---- DO NOT DO
     }
-
 }

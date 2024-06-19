@@ -14,18 +14,19 @@ public class LowercaseToUppercase {
         String str = scanner.nextLine();
 
         scanner.close();
-      
+
         str = str.toUpperCase(); // every character -> UPPERCASE
 
-    //display total count of vowels in string
-    System.out.println ("The new string is: " +str+ " .");
+        // display total count of vowels in string
+        System.out.println("The new string is: " + str + " .");
     }
 
 }
 
-
-/*WRONG:
- * for (int i = 0; i < str.length(); i++) {    // check of char[i] is a capital letter
-    str.charAt(i) = str.charAt(i).toUpperCase();
- }
+/*
+ * WRONG:
+ * for (int i = 0; i < str.length(); i++) { // check of char[i] is a capital
+ * letter
+ * str.charAt(i) = str.charAt(i).toUpperCase();
+ * }
  */

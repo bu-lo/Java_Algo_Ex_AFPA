@@ -11,7 +11,6 @@ public class AverageOfAnArray {
         userInput();
     }
 
-
     public static void userInput() {
         Scanner myObj = new Scanner(System.in);
         System.out.println("Please enter the value in the array: \n");
@@ -36,24 +35,22 @@ public class AverageOfAnArray {
 
         myObj.close();
 
-        int[] array = {n1, n2, n3, n4, n5, n6};
+        int[] array = { n1, n2, n3, n4, n5, n6 };
 
         averageOfAnArray(array);
     }
-
 
     public static void averageOfAnArray(int[] array) {
         int som = 0;
 
         for (int i = 0; i < array.length; i++) {
-        som += array[i];
+            som += array[i];
         }
 
         int averageArray = som / array.length;
 
         System.out.println("-----------------------");
-        System.out.println("The average of the array is: " +averageArray+ " .");
+        System.out.println("The average of the array is: " + averageArray + " .");
 
     }
-
 }

@@ -68,7 +68,7 @@ public class ArrayManip {
      */
     public static void minMaxArray(int[] array) {
 
-        //Initialization, hypothesis valor min or max is the firts case in the array
+        // Initialization, hypothesis valor min or max is the firts case in the array
         int min = array[0];
         int max = array[0];
 

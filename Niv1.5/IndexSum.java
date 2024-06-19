@@ -25,15 +25,15 @@ public class IndexSum {
     }
 
     public static void indexSum(int indexi, int indexj) {
-        int[] array = {4, 6, 2, 2};
+        int[] array = { 4, 6, 2, 2 };
         int isum = 0;
 
-        for (int i=indexi ; i<indexj ; i++) {
+        for (int i = indexi; i < indexj; i++) {
             isum += array[i];
         }
 
         System.out.println("---------------------------");
-        System.out.println("The sum of the elements between index i & j: " +isum+ " .");
+        System.out.println("The sum of the elements between index i & j: " + isum + " .");
 
     }
 
