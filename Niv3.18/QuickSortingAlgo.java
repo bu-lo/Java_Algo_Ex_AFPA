@@ -1,5 +1,5 @@
 /*
-* Exercise 18 level 2 - "Sorting algorithm" V2 "QUICKSORT"
+* Exercise 18 level 3 - "Sorting algorithm" V2 "QUICKSORT"
 */
 
 import java.util.Arrays;

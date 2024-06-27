@@ -1,5 +1,5 @@
 /*
-* Exercise 18 level 2 - "Sorting algorithm" V1 "BUBBLE SORT"
+* Exercise 18 level 3 - "Sorting algorithm" V1 "BUBBLE SORT"
 * Doc : https://interstices.info/les-algorithmes-de-tri/
 */
 
