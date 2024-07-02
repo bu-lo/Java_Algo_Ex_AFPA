@@ -53,7 +53,7 @@ public class GreedyAlgo {
     public static int[] calculNumberPieces(int sum, int[]refChangeArray, int[]iniNumberEachPieces){
 
         for(int i=0 ; i< refChangeArray.length; i++){
-            if (sum >= refChangeArray[i]){
+            if (sum > refChangeArray[i]){
                 iniNumberEachPieces[i] = sum/refChangeArray[i];
                 sum = sum % refChangeArray[i];
             }
