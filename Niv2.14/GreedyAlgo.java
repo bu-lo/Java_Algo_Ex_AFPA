@@ -6,11 +6,6 @@
 * ex: 4,64e -> 464 => 2*200 + 1*50 + 1*10 + 2*2
 */
 
-//
-// PB: ENTRY ex: 4.64 **************************************************************
-// -> WORK WITH 4.63
-//
-
 import java.util.Scanner;
 
 public class GreedyAlgo {
@@ -46,7 +41,7 @@ public class GreedyAlgo {
 
         System.out.println("Choose the giving change value: 'sum', please.");
         double sumDouble = 100*sc.nextDouble();
-        int sum = (int) sumDouble;
+        int sum = (int) Math.round(sumDouble); //ROUNDED + INT
 
         System.out.println("----------------");
 
