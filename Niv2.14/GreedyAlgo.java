@@ -6,6 +6,11 @@
 * ex: 4,64e -> 464 => 2*200 + 1*50 + 1*10 + 2*2
 */
 
+//
+// PB: ENTRY ex: 4.64 **************************************************************
+// -> WORK WITH 4.63
+//
+
 import java.util.Scanner;
 
 public class GreedyAlgo {
@@ -21,7 +26,7 @@ public class GreedyAlgo {
         int sum = userInput();
 
         //Display Result
-        System.out.println("Giving change for" + (sum/100) + "euros : ");
+        System.out.println("Giving change for " + (sum/100.00) + " euros : ");
         
         int[]arrayNumberPieces = calculNumberPieces(sum, refChangeArray, iniNumberEachPieces);
 
@@ -61,13 +66,5 @@ public class GreedyAlgo {
 
         return iniNumberEachPieces;
     }
-
-
-
-
-
-
-    
-
 
 }
